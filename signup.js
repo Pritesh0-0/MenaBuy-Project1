@@ -24,6 +24,8 @@ function storeData(){
     if(details.password===details.confirmPassword){
     temp.push(details)
     localStorage.setItem("LoginDetails",JSON.stringify(temp))
+    alert("Sign up successful!")
+    window.location.href="login.html"
     }
     else{
         alert("Confirm Password doesn't match")
