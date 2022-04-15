@@ -1,7 +1,7 @@
 const productContainers = [...document.querySelectorAll('.product-container')];
 const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
 const preBtn = [...document.querySelectorAll('.pre-btn')];
-
+var count = document.getElementById("count")
 productContainers.forEach((item, i) => {
     let containerDimensions = item.getBoundingClientRect();
     let containerWidth = containerDimensions.width;
@@ -168,5 +168,14 @@ productContainers.forEach((item, i) => {
               prodInfo.push(tem)
               console.log(tem)
               localStorage.setItem("addToCart",JSON.stringify(prodInfo))
+              counts()
            }
-        
+           function counts()
+           {
+               var a = JSON.parse(localStorage.getItem("addToCart"))
+
+               count.innerHTML = a.length
+           }
+           counts()
+       
+      
