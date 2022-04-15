@@ -144,3 +144,29 @@ productContainers.forEach((item, i) => {
            
            }
         
+           var proimg = document.querySelectorAll(".product-thumb")
+           var protitle = document.querySelectorAll(".product-short-description")
+           var proprice = document.querySelectorAll(".price")
+            if(localStorage.getItem("addToCart") == null)
+            {
+                localStorage.setItem("addToCart",JSON.stringify([]))
+            }
+           console.log(proimg.length)
+           function addto(n)
+           {
+               console.log(proimg[n].src)
+               console.log(protitle[n].innerHTML)
+               console.log(proprice[n].innerHTML)
+               var tem = {
+                   image: proimg[n].src,
+                   title:protitle[n].innerHTML,
+                   price:proprice[n].innerHTML,
+               }
+             
+               var prodInfo = []
+               prodInfo = JSON.parse(localStorage.getItem("addToCart"))
+              prodInfo.push(tem)
+              console.log(tem)
+              localStorage.setItem("addToCart",JSON.stringify(prodInfo))
+           }
+        
