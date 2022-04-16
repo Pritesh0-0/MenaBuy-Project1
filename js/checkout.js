@@ -95,7 +95,7 @@ function change(){
     }
     
     function thankyou(){
-      window.location.href="../html/index.html"
+      window.location.href="../html/thankyou.html"
     }
   // get.setAttribute("id","boxx")
   // get.style.backgroundColor="orange"
