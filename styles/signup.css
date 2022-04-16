@@ -1,7 +1,8 @@
+
 #main{
     width: 100%;
     /* border: 1px solid black; */
-    height: 600px;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
 }
@@ -19,7 +20,7 @@ height: 100%;
 #leftpart>p{
  text-align: center;
 }
-#Login{
+#signup{
   
     background-color: orange;
     color: white;
@@ -30,7 +31,7 @@ height: 100%;
 #login{
     display: flex;
     justify-content: space-between;
-    width: 40%;
+    width: 50%;
     /* border: 1px solid black; */
 }
 #facebook{
@@ -148,4 +149,25 @@ input{
 .alreadyhave{
     text-decoration: underline;
     color: rgb(53, 81, 72);
+}
+@media (min-width: 600px) and (max-width: 950px){
+    #login{
+        width: 60%;
+    }
+}
+@media (min-width: 60px) and (max-width: 600px){
+    #main{
+        display: flex;
+        flex-direction: column;
+    }
+    #rightpart{
+        width: 100%;
+
+    }
+    #leftpart{
+        width: 100%;
+    }
+    #login{
+        width: 90%;
+    }
 }

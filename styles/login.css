@@ -19,7 +19,7 @@ height: 100%;
 #leftpart>p{
  text-align: center;
 }
-#signup{
+#Login{
   
     background-color: orange;
     color: white;
@@ -148,4 +148,14 @@ input{
 .alreadyhave{
     text-decoration: underline;
     color: rgb(53, 81, 72);
+}
+
+#Totalitems{
+    color: rgb(153, 27, 27);
+}
+#Total{
+    color: rgb(153, 27, 27);
+}
+#Subtotal{
+    color: rgb(32, 119, 166);
 }

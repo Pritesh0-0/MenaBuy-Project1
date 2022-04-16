@@ -27,3 +27,8 @@ function storeData(){
    
 
 }
+let cartitem=5
+if(cartitem!=0){
+    let totalitems=document.querySelector("#Total");
+    totalitems.innerText= cartitem;
+}
