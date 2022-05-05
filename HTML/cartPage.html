@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.meanbuy.com/assets/img/icos/apple-icon-57x57.png" />
+    <title>Your Cart Details</title>
+    <link rel="stylesheet" href="../CSS/cartPage.css">
+</head>
+
+<body>
+    <div id="navBar">
+        <div id="leftDiv">
+            <div id="a">
+                <a href="../HTML/home.html"><img src="https://meanbuyassets.s3.ap-south-1.amazonaws.com/baselogo.png"
+                        alt=""></a>
+            </div>
+            <div id="b">
+                <input type="text" placeholder="search here">
+            </div>
+            <div id="c" style="display:flex;gap:5px;">
+                <div>
+                    <h5 style="font-size: 18px;">Shopping Cart </h5>
+                </div>
+                <div>
+                    <p style="color:red;" id="items">(0 Items)</p>
+                </div>
+            </div>
+            <div id="d">
+                <button><a href="../HTML/bestDeals.html" style="color: aliceblue;padding: 5px;">Continue
+                        Shopping</a></button>
+            </div>
+        </div>
+
+        <div id="rightDiv">
+            <div>
+                <p style="margin-top: 10px;"><a href="">Seller's Corner</a> | <a href="">Feedback</a> | <a
+                        href="">Delivary Info</a></p>
+            </div>
+            <div>
+                <div style="text-align: center;">
+                    <p><a href="../HTML/login.html">LOGIN</a> / <a href="../HTML/signup.html">SIGNUP</a></p>
+                </div>
+                <div>
+                    <h4>WELCOME GUEST</h4>
+                </div>
+            </div>
+            <div style="display:flex;gap:5px">
+                <div><a href="../HTML/cartPage.html"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAOltESk2kisSh56FwjCYJz1BAd8MIgxM9Cw&usqp=CAU"
+                            alt=""></a></div>
+                <div>
+                    <p style="color: orangered;" id="cartCount">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="color: 2px solid orangered;">
+    <div class="container">
+        <h1>Shopping Cart</h1>
+        <div class="cart">
+            <div class="products">
+                <table>
+                    <tbody class="productsTable">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="cart-total">
+                <p>
+                    <span>Total Price</span>
+                    <span id="totalrupee">0</span>
+                </p>
+                <p>
+                    <span>Number of Items</span>
+                    <span id="numOfItem">0</span>
+                </p>
+                <p>
+                    <span>Select Delivary</span>
+                    <input type="date">
+                </p>
+                <a href="../HTML/checkout.html">Proceed to Checkout</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../JS/cartPage.js"></script>
+
+</html>
