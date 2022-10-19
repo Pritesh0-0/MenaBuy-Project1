@@ -36,6 +36,6 @@ Everyone will agree that it is not easy to go down to the market in massive traf
 # Team Members
 
 -[pritesh patil](https://github.com/Pritesh0-0)
--[Niranjan Ghone]
--[Ausaf]
--[Avinash]
+- [Avinash Kumar Ray](https://github.com/Avi1702)
+- [Aausaf Alam](https://github.com/Aausaaf)
+- [Niranjan Ghone]()
